@@ -1,0 +1,13 @@
+core = 7.x
+
+api = 2
+
+; Copy of core
+projects[drupal][version]  = "7.14"
+
+; Copy of moat_standard
+; This contains another makefile that will recursively fetch
+; our contrib/custom modules, libraries and themes
+projects[moat_standard][type] = "profile"
+projects[moat_standard][download][type] = "git"
+projects[moat_standard][download][url] = "git@github.com:moatmedia/moat_standard.git"
